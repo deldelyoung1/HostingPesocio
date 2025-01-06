@@ -6,10 +6,11 @@
   <title>Login</title>
   <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -47,7 +48,6 @@ body {
   0% {
     background: #ecc94b;
   }
-
   25% {
     background: #72741f;
   }
@@ -56,6 +56,10 @@ body {
 .login-box {
   position: absolute;
   width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .login-box form {
@@ -67,7 +71,9 @@ h2 {
   font-size: 2em;
   color: #ecc94b;
   text-align: center;
+  margin-bottom: 20px;
 }
+
 .input-box {
   position: relative;
   margin: 25px 0;
@@ -104,9 +110,9 @@ h2 {
 
 .input-box input:focus ~ label,
 .input-box input:valid ~ label {
-  top: 1px;
-  font-size: 0.8em;
-  background-color: #72741f;
+  top: -10px;
+  font-size: 0.85em;
+  background-color: #1f293a;
   padding: 0 6px;
   color: #ecc94b;
 }
@@ -120,9 +126,11 @@ h2 {
   font-size: 0.85em;
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .forgot-password a:hover {
+  color: #ecc94b;
   text-decoration: underline;
 }
 
@@ -137,6 +145,11 @@ h2 {
   font-size: 1em;
   color: #72741f;
   font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d4b63b;
 }
 
 .signup-link {
@@ -149,11 +162,14 @@ h2 {
   color: #ecc94b;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.3s;
 }
 
 .signup-link a:hover {
+  color: #d4b63b;
   text-decoration: underline;
-}                                         
+}
+                 
  
  </style>
  
